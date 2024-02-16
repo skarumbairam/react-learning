@@ -22,10 +22,7 @@ const Restaurant = () => {
     console.log(dataJson);
   };
   useEffect(() => {
-    fetchRestInfo();
-
-    // https://www.swiggy.com/restaurants/suvai-briyani-restaurant-palakarai-kk-nagar-trichy-523453
-    //https%3A%2F%2Fwww.swiggy.com%2Frestaurants%2Fsuvai-briyani-restaurant-palakarai-kk-nagar-trichy-523453
+    // fetchRestInfo();
   }, []);
 
   return (

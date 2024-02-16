@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useContext, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header";
@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Restaurant from "./components/Restaurant";
+import UserInfoContext from "./utils/UserInfoContext";
 //import TestClassComponent from "./components/ClassComponent"; loading from when goes to class component
 
 // Code splitting, lazy loading
@@ -14,11 +15,21 @@ import Restaurant from "./components/Restaurant";
 const TestClassComponent = lazy(() => import("./components/ClassComponent"));
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    // after Login check completes we get the value data.name = Senthil
+    // setUserName({ loggedInUser: "Senthilkumar" });
+    setUserName("Senthilkumar");
+  }, []);
+  console.log("userName", userName);
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    <UserInfoContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div>
+        <Header />
+        <Outlet />
+      </div>
+    </UserInfoContext.Provider>
   );
 };
 
