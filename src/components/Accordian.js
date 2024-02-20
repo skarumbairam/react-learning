@@ -2,9 +2,9 @@ import { useState } from "react";
 import AccordianItem from "./AccordianItem";
 
 const accordianItems = [
-  { title: "Item 1", description: "Lerom Ipsom Text Lerom Ipsom Text Lerom" },
-  { title: "Item 2", description: "Lerom Ipsom Text" },
-  { title: "Item 3", description: "Lerom Ipsom Text" },
+  { title: "Item 1", description: "Lerom Ipsom Text Lerom Ipsom Text Lerom 1" },
+  { title: "Item 2", description: "Lerom Ipsom Text 2" },
+  { title: "Item 3", description: "Lerom Ipsom Text 3" },
 ];
 
 const Accordian = (props) => {
