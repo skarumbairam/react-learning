@@ -1,66 +1,59 @@
 import React, { useEffect, useState } from "react";
 
+const selectHandler = (e) => {
+  console.log(e.target.value, this.index);
+};
+
 const DropDown = () => {
-  const array = ["Volvo", "Sabb", "Mercedes", "Audi"];
-  const [newTask, setNewTask] = useState([]);
-  const [inputText, setInputText] = useState("");
-  useEffect(() => {
-    setNewTask(array);
-  }, []);
+  const countries = [
+    { name: "India", cc: "IN", cities: ["Delhi", "Chennai", "Mumbai"] },
+    { name: "Pakistan", cc: "PK", cities: ["Lahore", "Karachi"] },
+    { name: "Bangladesh", cc: "BG", cities: ["Dhaka", "Chittagong"] },
+  ];
+  const [city, setCity] = useState([countries[0].cities]);
+
+  const countryChangeHandler = (e) => {
+    const getCityObj = countries.filter(
+      (item, index) => item.name === e.target.value
+    );
+    setCity(getCityObj[0].cities);
+  };
   return (
     <div>
-      <h1>To Do List</h1>
-      <ul>
-        {newTask.map((item) => {
-          return <List value={item} />;
+      <h3>Drop Down and Select Example Componet</h3>
+      <label>Country List:</label> <br></br>
+      <select
+        className="p-2 m2 cursor-pointer"
+        onChange={(e) => {
+          countryChangeHandler(e);
+        }}
+      >
+        {countries.map((item) => {
+          return (
+            <option
+              className="p-2 cursor-pointer"
+              key={item.name}
+              value={item.name}
+            >
+              {" "}
+              {item.name}{" "}
+            </option>
+          );
         })}
-      </ul>
-
-      <div className="newList">
-        <input
-          type="text"
-          value={inputText}
-          onChange={(e) => {
-            setInputText(e.target.value);
-          }}
-        ></input>
-        <button
-          className="btn"
-          onClick={() => {
-            setNewTask([...newTask, inputText]);
-          }}
-        >
-          Add New
-        </button>
-      </div>
+      </select>
+      <label>City List:</label>
+      <select className="p-2 m-2 cursor-pointer">
+        {city.map((item, idx) => {
+          return (
+            <option className="cursor-pointer" key={item} value={item}>
+              {" "}
+              {item}{" "}
+            </option>
+          );
+        })}
+      </select>
     </div>
   );
 };
 
 export default DropDown;
-
-const List = (props) => {
-  const [isChecked, setIsChecked] = useState(false);
-  const [isRemove, setIsRemove] = useState(true);
-
-  return (
-    <div className={isRemove ? "show" : "hide"}>
-      <input
-        type="checkbox"
-        value={props.value}
-        onChange={() => {
-          setIsChecked(!isChecked);
-        }}
-      />
-      {props.value}
-      <button
-        className={isChecked ? "show btn-del" : "hide"}
-        onClick={() => {
-          setIsRemove(!setIsRemove);
-        }}
-      >
-        Remove
-      </button>
-    </div>
-  );
-};

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const todoList = [
-  { task: "Meet fried at 5px Today", completed: false, id: 1 },
-  { task: "Meet fried at 5pm Tomorrow", completed: false, id: 2 },
+  { task: "Task 1", completed: false, id: 1 },
+  { task: "Task 2", completed: false, id: 2 },
 ];
 
 const ToDoList = () => {

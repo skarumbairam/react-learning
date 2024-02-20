@@ -9,6 +9,7 @@ import ToDoList from "./ToDoList";
 const About = () => {
   const { loggedInUser, setUserName } = useContext(UserInfoContext); // setUserName is coming from parent passing as function
 
+  console.log("Render Whole About Page");
   return (
     <div className="w-full py-5">
       <div className="w-10/12 m-auto my-4 border border-black">
@@ -56,6 +57,10 @@ const About = () => {
           <h3>ToDoList</h3>
           <ToDoList />
         </div>
+      </div>
+
+      <div className="w-10/12 m-auto  my-4  border border-black">
+        <DropDown />
       </div>
     </div>
   );

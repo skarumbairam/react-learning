@@ -35751,6 +35751,7 @@ var _s = $RefreshSig$();
 const About = ()=>{
     _s();
     const { loggedInUser, setUserName } = (0, _react.useContext)((0, _userInfoContextDefault.default)); // setUserName is coming from parent passing as function
+    console.log("Render Whole About Page");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "w-full py-5",
         children: [
@@ -35762,7 +35763,7 @@ const About = ()=>{
                         children: "About Page"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 15,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35770,12 +35771,12 @@ const About = ()=>{
                         children: "Accordian Functionality "
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 16,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordianDefault.default), {}, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 17,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35783,7 +35784,7 @@ const About = ()=>{
                         children: "Checking User Context Use case"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -35794,13 +35795,13 @@ const About = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/About.js",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/About.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35811,7 +35812,7 @@ const About = ()=>{
                         children: "Set User context Functionality"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -35821,7 +35822,7 @@ const About = ()=>{
                         onChange: (e)=>setUserName(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35832,13 +35833,13 @@ const About = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/About.js",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/About.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35850,24 +35851,24 @@ const About = ()=>{
                             children: "Display Table"
                         }, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, undefined),
                         " ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tableDefault.default), {}, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 34
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/About.js",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35879,23 +35880,23 @@ const About = ()=>{
                             children: "ImageCarousel"
                         }, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageCarouselDefault.default), {}, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/About.js",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 47,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35907,29 +35908,41 @@ const About = ()=>{
                             children: "ToDoList"
                         }, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toDoListDefault.default), {}, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 57,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/About.js",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 54,
+                lineNumber: 55,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-10/12 m-auto  my-4  border border-black",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropDownDefault.default), {}, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -35956,130 +35969,134 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+var _s = $RefreshSig$();
+const selectHandler = (e)=>{
+    console.log(e.target.value, undefined.index);
+};
 const DropDown = ()=>{
     _s();
-    const array = [
-        "Volvo",
-        "Sabb",
-        "Mercedes",
-        "Audi"
+    const countries = [
+        {
+            name: "India",
+            cc: "IN",
+            cities: [
+                "Delhi",
+                "Chennai",
+                "Mumbai"
+            ]
+        },
+        {
+            name: "Pakistan",
+            cc: "PK",
+            cities: [
+                "Lahore",
+                "Karachi"
+            ]
+        },
+        {
+            name: "Bangladesh",
+            cc: "BG",
+            cities: [
+                "Dhaka",
+                "Chittagong"
+            ]
+        }
     ];
-    const [newTask, setNewTask] = (0, _react.useState)([]);
-    const [inputText, setInputText] = (0, _react.useState)("");
-    (0, _react.useEffect)(()=>{
-        setNewTask(array);
-    }, []);
+    const [city, setCity] = (0, _react.useState)([
+        countries[0].cities
+    ]);
+    const countryChangeHandler = (e)=>{
+        const getCityObj = countries.filter((item, index)=>item.name === e.target.value);
+        setCity(getCityObj[0].cities);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "To Do List"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Drop Down and Select Example Componet"
             }, void 0, false, {
                 fileName: "src/components/DropDown.js",
-                lineNumber: 12,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                children: newTask.map((item)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(List, {
-                        value: item
-                    }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: "Country List:"
+            }, void 0, false, {
+                fileName: "src/components/DropDown.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/DropDown.js",
+                lineNumber: 24,
+                columnNumber: 36
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                className: "p-2 m2 cursor-pointer",
+                onChange: (e)=>{
+                    countryChangeHandler(e);
+                },
+                children: countries.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        className: "p-2 cursor-pointer",
+                        value: item.name,
+                        children: [
+                            " ",
+                            item.name,
+                            " "
+                        ]
+                    }, item.name, true, {
                         fileName: "src/components/DropDown.js",
-                        lineNumber: 15,
-                        columnNumber: 18
+                        lineNumber: 33,
+                        columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/DropDown.js",
-                lineNumber: 13,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "newList",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        value: inputText,
-                        onChange: (e)=>{
-                            setInputText(e.target.value);
-                        }
-                    }, void 0, false, {
-                        fileName: "src/components/DropDown.js",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "btn",
-                        onClick: ()=>{
-                            setNewTask([
-                                ...newTask,
-                                inputText
-                            ]);
-                        },
-                        children: "Add New"
-                    }, void 0, false, {
-                        fileName: "src/components/DropDown.js",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: "City List:"
+            }, void 0, false, {
                 fileName: "src/components/DropDown.js",
-                lineNumber: 19,
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                className: "p-2 m-2 cursor-pointer",
+                children: city.map((item, idx)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        className: "cursor-pointer",
+                        value: item,
+                        children: [
+                            " ",
+                            item,
+                            " "
+                        ]
+                    }, item, true, {
+                        fileName: "src/components/DropDown.js",
+                        lineNumber: 48,
+                        columnNumber: 13
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/components/DropDown.js",
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/DropDown.js",
-        lineNumber: 11,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
-_s(DropDown, "KQq0bR59AKSlLNqSm6uzAFubKNg=");
+_s(DropDown, "RtFhMbzQJpUYC+KanOrZ3EbhCvA=");
 _c = DropDown;
 exports.default = DropDown;
-const List = (props)=>{
-    _s1();
-    const [isChecked, setIsChecked] = (0, _react.useState)(false);
-    const [isRemove, setIsRemove] = (0, _react.useState)(true);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: isRemove ? "show" : "hide",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                type: "checkbox",
-                value: props.value,
-                onChange: ()=>{
-                    setIsChecked(!isChecked);
-                }
-            }, void 0, false, {
-                fileName: "src/components/DropDown.js",
-                lineNumber: 48,
-                columnNumber: 7
-            }, undefined),
-            props.value,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: isChecked ? "show btn-del" : "hide",
-                onClick: ()=>{
-                    setIsRemove(!setIsRemove);
-                },
-                children: "Remove"
-            }, void 0, false, {
-                fileName: "src/components/DropDown.js",
-                lineNumber: 56,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/DropDown.js",
-        lineNumber: 47,
-        columnNumber: 5
-    }, undefined);
-};
-_s1(List, "/W/FgfX46GEQZPLc0ptlP0qu8P0=");
-_c1 = List;
-var _c, _c1;
+var _c;
 $RefreshReg$(_c, "DropDown");
-$RefreshReg$(_c1, "List");
 
   $parcel$ReactRefreshHelpers$5d4e.postlude(module);
 } finally {
@@ -36522,12 +36539,12 @@ var _react = require("react");
 var _s = $RefreshSig$(), _s1 = $RefreshSig$();
 const todoList = [
     {
-        task: "Meet fried at 5px Today",
+        task: "Task 1",
         completed: false,
         id: 1
     },
     {
-        task: "Meet fried at 5pm Tomorrow",
+        task: "Task 2",
         completed: false,
         id: 2
     }
