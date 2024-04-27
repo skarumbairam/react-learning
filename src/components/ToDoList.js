@@ -17,7 +17,7 @@ const ToDoList = () => {
     const newTask = {};
     newTask["task"] = text;
     newTask["completed"] = false;
-    newTask["id"] = Math.round(Math.random() * 100);
+    newTask["id"] = new Date().now();
     setText("");
     setTaskItem([...taskeItem, newTask]);
   };

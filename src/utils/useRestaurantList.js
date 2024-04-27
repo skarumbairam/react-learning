@@ -12,9 +12,7 @@ const useRestaurantList = (apiUrl) => {
       const response = await fetch(apiUrl);
       const jsonData = await response.json();
       //TO DO Set a promise and then get error, if error then go to static file
-      const restList =
-        jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants || staticList;
+      const restList = staticList;
       setRestaurantList(restList);
     } catch (error) {
       // TODO DEFAULT
